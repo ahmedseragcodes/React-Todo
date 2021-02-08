@@ -9,6 +9,9 @@ html {
 .item.completed {
     text-decoration: line-through;
 }
-select, input {
+select, input, form {
+    margin: 1rem;
+}
+button {
     margin: 1rem;
 }
