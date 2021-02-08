@@ -50,6 +50,12 @@ class App extends React.Component {
       toDos: newToDos,
     })
   }
+
+  addItem=(item)=>{
+    this.setState({
+      toDos: [...this.state.toDos, item],
+    })
+  }
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
@@ -57,7 +63,7 @@ class App extends React.Component {
     return (
       <div>
         <h2>My To Do List</h2>
-        <TodoForm />
+        <TodoForm addItem={this.addItem}/>
         <TodoList toDos={this.state.toDos} toggleItem={this.toggleItem} />
       </div>
     );

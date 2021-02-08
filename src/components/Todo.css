@@ -6,7 +6,10 @@ html {
     font-size: 62.5%;
     font-family: 'Playfair Display', "serif";
 }
-.item.completed {
+body {
+    font-size: 1.8rem;
+}
+.completed {
     text-decoration: line-through;
 }
 select, input, form {
