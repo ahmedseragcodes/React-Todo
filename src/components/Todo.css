@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Playfair Display', "serif";
+}
+.item.completed {
+    text-decoration: line-through;
+}
+select, input {
+    margin: 1rem;
+}
